@@ -1,13 +1,14 @@
-# 1 Schema - where is the graphql schema located at 
-schema: "https://api.lens.dev"
+  # 1 Schema - where is the graphql schema located at 
+schema: "schema.graphql"
 
-# 2 Documents - What path are the graphql located at
-documents: "app/graphql/*.graphql"     # since our doucments are located at app/graphql
+# 2 Documents - What path are the GraphQL documents located at
+documents: "app/graphql/*.graphql" # since our documents are located at app/graphql
 
-# Results - where should the generated code be placed and what plugins doe we need and what operational flags do we need to include
+# Results - where should the generated code be placed and what plugins do we need and what operational flags do we need to include
 
 generates:
-  src/graphql/generated.ts:
+  app/graphql/generated.ts:
+   # Specify the path to your local schema file here
     plugins:
       - typescript
       - typescript-operations
