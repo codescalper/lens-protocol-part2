@@ -1,16 +1,27 @@
-import { useState,useEffect } from "react";
+import { PublicationSortCriteria, useExplorePublicationsQuery } from "./graphql/generated";
 
-async function fetchPost(){
-  return{
-  title:"Hello World",
-  
-  }
+export default  function Home() {
+  // const { isLoading, error, data } = useExplorePublicationsQuery(
+  //   {
+  //     endpoint: "https://api.lens.com",
+  //     fetchParams: {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     },
+  //   },
+  //   {
+  //     request: {
+  //       sortCriteria: PublicationSortCriteria.TopCommented,
+  //     },
+  //   }
+  // );
 
-}
+  // console.log(data, isLoading, error);
 
-export default function Home() {
   return (
-   <>
-   </>
+    <>
+      <h1>Explore Publications</h1>
+    </>
   );
 }
