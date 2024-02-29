@@ -10,14 +10,14 @@ import Link from "next/link";
 
 export default function Home() {
   const { data } = useExploreProfiles({
-    orderBy: ExploreProfilesOrderByType.MostFollowers,
+    orderBy: ExploreProfilesOrderByType.LatestCreated,
     limit: LimitType.TwentyFive,
   });
   console.log("data: ", data);
 
   return (
     <div className="p-20">
-      <h1 className="text-5xl">My Lens App</h1>
+      <h1 className="text-5xl">Lens Protocol assignment</h1>
       {data?.map((profile, index) => (
         <Link
           href={`/profile/${profile.handle?.localName}.${profile.handle?.namespace}`}
