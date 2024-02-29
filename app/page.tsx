@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className="p-20">
-      <h1 className="text-5xl">Lens Protocol assignment</h1>
+      <h1 className="text-5xl">Lens protocol API-V2 assignment</h1>
       {data?.map((profile, index) => (
         <Link
           href={`/profile/${profile.handle?.localName}.${profile.handle?.namespace}`}
