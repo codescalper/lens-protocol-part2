@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Application Development Report
 
-First, run the development server:
+### Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+In this project, I developed an application using the Lens API V2. The application enables users to create profiles, manage their profiles, and post simple text messages via the API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Approach
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+My approach was to utilize the Lens Protocol V2 documentation available at [Lens Protocol V2 Docs](https://docs.lens.xyz/v2/docs/whats-new-in-lens-v2) as there were limited tutorials and resources specifically for V2. Despite facing challenges with deprecated features and errors with the wagmi package, the documentation proved to be invaluable in understanding the updated concepts and functionalities.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I opted to develop the application using Next.js due to its simplicity and efficiency. I familiarized myself with key concepts of the Lens ecosystem such as mirror, post, comment, and quote. While exploring data querying methods, I found three main approaches: Lens client SDK, GraphQL, and URQL. After experimenting with each, I decided to proceed with URQL and the Lens client SDK.
 
-## Learn More
+### Challenges Faced
 
-To learn more about Next.js, take a look at the following resources:
+One major challenge was the lack of comprehensive tutorials and resources for Lens Protocol V2. While there were resources available for V1, transitioning to V2 posed its own set of obstacles, especially with deprecated features and errors in external packages.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Notable Decisions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+A notable decision during the development process was to refrain from seeking additional internet resources on Lens Protocol V2 on the final day of submission. Despite encountering errors and discrepancies in TypeScript packages, I focused on utilizing the available documentation and resources to complete the project.
 
-## Deploy on Vercel
+### Conclusion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Despite the challenges faced, developing this application provided valuable insights into the Lens ecosystem and API V2. By leveraging the documentation and experimenting with different tools and approaches, I was able to overcome obstacles and successfully implement the required functionalities.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Additional Note
+
+I want to highlight that while there were challenges, the experience of building this application was enriching and educational. The limitations in available resources emphasized the importance of thorough documentation and adaptability in software development projects.
+
+For further details, please refer to the deployed application and GitHub repository.
+
+[Deployed Application Link](https://lens-protocol-part2.vercel.app/)
