@@ -4,7 +4,7 @@ import { createWeb3Modal } from "@web3modal/wagmi/react";
 import { defaultWagmiConfig } from "@web3modal/wagmi/react/config";
 
 import { WagmiConfig } from "wagmi";
-import { arbitrum, mainnet } from "viem/chains";
+import { polygon, polygonMumbai } from "viem/chains";
 
 const projectId = process.env.NEXT_PUBLIC_WC_ID || "";
 
